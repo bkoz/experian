@@ -1,7 +1,16 @@
 import requests
 import json
 import os
+import dotenv
+import logging
 
+dotenv.load_dotenv(".env")
+dotenv.dotenv_values()
+
+logging.basicConfig(level=logging.DEBUG)
+logging.debug(f'{dotenv.dotenv_values()=}')
+
+    
 # --- Experian API Credentials and Configuration ---
 # You must replace these placeholder values with your actual credentials from the Experian Developer Portal.
 # Note: This is for the sandbox environment.
@@ -11,7 +20,7 @@ CLIENT_ID = os.getenv("EXPERIAN_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EXPERIAN_CLIENT_SECRET")
 
 TOKEN_URL = "https://sandbox-us-api.experian.com/oauth2/v1/token"
-FICO_SCORE_URL = "https://sandbox-us-api.experian.com/consumer/services/credit/v1/fico-score"
+FICO_SCORE_URL = "https://sandbox-us-api.experian.com/v1/ficoScore"
 
 def get_access_token(username, password, client_id, client_secret):
     """
@@ -19,23 +28,28 @@ def get_access_token(username, password, client_id, client_secret):
     """
     headers = {
         "Accept": "application/json",
-        "Content-Type": "application/json",
-        "grant_type": "password"
+        "Content-Type": "application/x-www-form-urlencoded"
     }
     payload = {
+        "grant_type": "password",
         "username": username,
         "password": password,
         "client_id": client_id,
         "client_secret": client_secret
     }
-    
+
     try:
-        response = requests.post(TOKEN_URL, headers=headers, data=json.dumps(payload))
+        logging.debug(f"Making request to {TOKEN_URL}")
+        logging.debug(f"Headers: {headers}")
+        logging.debug(f"Payload: {payload}")
+        response = requests.post(TOKEN_URL, headers=headers, data=payload)
+        logging.debug(f"Response status: {response.status_code}")
+        logging.debug(f"Response body: {response.text}")
         response.raise_for_status() # Raise an exception for bad status codes (4xx or 5xx)
         token_data = response.json()
         return token_data.get("access_token")
     except requests.exceptions.RequestException as e:
-        print(f"Error obtaining token: {e}")
+        logging.error(f"Error obtaining token: {e}")
         return None
 
 def perform_credit_check(access_token, consumer_data):
@@ -53,13 +67,21 @@ def perform_credit_check(access_token, consumer_data):
     }
     
     try:
-        # The consumer_data payload needs to follow the specific schema required by the API.
-        # This example uses common, but potentially non-exhaustive, fields.
-        response = requests.post(FICO_SCORE_URL, headers=headers, data=json.dumps(consumer_data))
+        # Log request details
+        logging.debug(f"Making request to {FICO_SCORE_URL}")
+        logging.debug(f"Headers: {headers}")
+        logging.debug(f"Payload: {json.dumps(consumer_data, indent=2)}")
+        
+        response = requests.post(FICO_SCORE_URL, headers=headers, json=consumer_data)
+        logging.debug(f"Response status: {response.status_code}")
+        logging.debug(f"Response body: {response.text}")
+        
         response.raise_for_status()
         return response.json()
     except requests.exceptions.RequestException as e:
         print(f"Error performing credit check: {e}")
+        if hasattr(e.response, 'text'):
+            print(f"Error details: {e.response.text}")
         return None
 
 if __name__ == "__main__":
@@ -68,19 +90,24 @@ if __name__ == "__main__":
     sample_consumer_data = {
         "firstName": "John",
         "lastName": "Doe",
-        "dateOfBirth": "1980-01-01", 
-        "ssn": "999999999", # Sandbox test SSN
-        "street1": "123 Main St",
+        "ssn": "999999999",
+        "dob": "1980-01-01",
+        "street": "123 Main St",
         "city": "Anytown",
         "state": "CA",
-        "zipCode": "90210"
+        "zip": "90210",
+        "reportType": "fico8",
+        "purpose": "31",
+        "subcode": "1234567"
     }
 
     # 1. Get the access token
+    logging.debug(f"Credentials loaded - USERNAME: {'set' if USERNAME else 'not set'}, PASSWORD: {'set' if PASSWORD else 'not set'}, CLIENT_ID: {'set' if CLIENT_ID else 'not set'}, CLIENT_SECRET: {'set' if CLIENT_SECRET else 'not set'}")
+    
     token = get_access_token(USERNAME, PASSWORD, CLIENT_ID, CLIENT_SECRET)
 
     if token:
-        print("Successfully obtained access token.")
+        logging.info("Successfully obtained access token.")
         
         # 2. Perform the credit check
         credit_report = perform_credit_check(token, sample_consumer_data)
