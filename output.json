@@ -1,0 +1,4069 @@
+{
+    "creditProfile": [
+        {
+            "headerRecord": [
+                {
+                    "reportDate": "080619",
+                    "reportTime": "062538",
+                    "preamble": "TIN1",
+                    "versionNo": "07",
+                    "mKeywordLength": "14",
+                    "mKeywordText": "07162019TEST01",
+                    "y2kReportedDate": "08062019"
+                }
+            ],
+            "addressInformation": [
+                {
+                    "city": "MICHIGAN CITY",
+                    "dwellingType": "S",
+                    "firstReportedDate": "12082015",
+                    "lastReportingSubscriberCode": "2222222",
+                    "lastUpdatedDate": "12082015",
+                    "source": "1",
+                    "state": "IN",
+                    "streetName": "MONROE",
+                    "streetPrefix": "510",
+                    "streetSuffix": "ST",
+                    "timesReported": "13",
+                    "zipCode": "463605040"
+                },
+                {
+                    "city": "HUNTINGTON STATION",
+                    "dwellingType": "S",
+                    "firstReportedDate": "02282011",
+                    "lastUpdatedDate": "02282011",
+                    "source": "1",
+                    "state": "NY",
+                    "timesReported": "00",
+                    "zipCode": "11750"
+                },
+                {
+                    "city": "LOS ANGELES",
+                    "dwellingType": "S",
+                    "firstReportedDate": "11022018",
+                    "lastUpdatedDate": "11062018",
+                    "source": "6",
+                    "state": "CA",
+                    "streetName": "HIGHLIGHT",
+                    "streetPrefix": "5364",
+                    "streetSuffix": "PL",
+                    "timesReported": "00",
+                    "zipCode": "900165119"
+                }
+            ],
+            "consumerIdentity": {
+                "dob": {
+                    "day": "24",
+                    "month": "08",
+                    "year": "1955"
+                },
+                "name": [
+                    {
+                        "firstName": "JOHN",
+                        "middleName": "NORMAN",
+                        "surname": "CANN"
+                    },
+                    {
+                        "firstName": "JONN",
+                        "middleName": "N",
+                        "surname": "CANN"
+                    },
+                    {
+                        "firstName": "JOHN",
+                        "surname": "BARRY",
+                        "type": "A"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "2198727251",
+                        "source": "U"
+                    }
+                ]
+            },
+            "fraudShield": [
+                {
+                    "addressCount": "0000",
+                    "addressDate": "05012019",
+                    "addressErrorCode": "0",
+                    "fraudShieldIndicators": {
+                        "indicator": [
+                            "01",
+                            "04",
+                            "26"
+                        ]
+                    },
+                    "socialCount": "0004",
+                    "socialDate": "05012019",
+                    "socialErrorCode": "0",
+                    "type": "99"
+                }
+            ],
+            "informationalMessage": [
+                {
+                    "messageNumber": "27",
+                    "messageNumberDetailed": "0027",
+                    "messageText": "CKPT: INPUT SSN ISSUE DATE UNVERIFIED"
+                },
+                {
+                    "messageNumber": "35",
+                    "messageNumberDetailed": "0035",
+                    "messageText": "CKPT: BEST ONFILE SSN ISSUE DATE UNVERIFIED"
+                },
+                {
+                    "messageNumber": "57",
+                    "messageNumberDetailed": "1222",
+                    "messageText": "TAX INQUIRY FLAG: N"
+                }
+            ],
+            "inquiry": [
+                {
+                    "amount": "UNKNOWN",
+                    "date": "11062018",
+                    "kob": "FC",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "SEARS WACO CREDIT UNIO",
+                    "terms": "UNK",
+                    "type": "31"
+                },
+                {
+                    "amount": "UNKNOWN",
+                    "date": "11022018",
+                    "kob": "FC",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "SEARS WACO CREDIT UNIO",
+                    "terms": "UNK",
+                    "type": "31"
+                },
+                {
+                    "amount": "UNKNOWN",
+                    "date": "11012017",
+                    "kob": "FR",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "LANDAMERICA CREDIT SVC",
+                    "terms": "UNK",
+                    "type": "08"
+                },
+                {
+                    "amount": "UNKNOWN",
+                    "date": "10072017",
+                    "kob": "FR",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "LANDAMERICA CREDIT SVC",
+                    "terms": "UNK",
+                    "type": "08"
+                }
+            ],
+            "ofac": {
+                "messageNumber": "1202",
+                "messageText": "OFAC NO RECORD FOUND"
+            },
+            "summaries": [
+                {
+                    "summaryType": "Profile Summary",
+                    "attributes": [
+                        {
+                            "id": "disputedAccountsExcluded",
+                            "value": "000"
+                        },
+                        {
+                            "id": "publicRecordsCount",
+                            "value": "100"
+                        },
+                        {
+                            "id": "installmentBalance",
+                            "value": "00021412"
+                        },
+                        {
+                            "id": "realEstateBalance",
+                            "value": "00121892"
+                        },
+                        {
+                            "id": "revolvingBalance",
+                            "value": "00000000"
+                        },
+                        {
+                            "id": "pastDueAmount",
+                            "value": "00000000"
+                        },
+                        {
+                            "id": "monthlyPayment",
+                            "value": "00000000"
+                        },
+                        {
+                            "id": "monthlyPaymentPartialFlag",
+                            "value": "*"
+                        },
+                        {
+                            "id": "realEstatePayment",
+                            "value": "00000956"
+                        },
+                        {
+                            "id": "realEstatePaymentPartialFlag"
+                        },
+                        {
+                            "id": "revolvingAvailablePercent",
+                            "value": "100"
+                        },
+                        {
+                            "id": "revolvingAvailablePartialFlag"
+                        },
+                        {
+                            "id": "totalInquiries",
+                            "value": "004"
+                        },
+                        {
+                            "id": "inquiriesDuringLast6Months",
+                            "value": "000"
+                        },
+                        {
+                            "id": "totalTradeItems",
+                            "value": "021"
+                        },
+                        {
+                            "id": "paidAccounts",
+                            "value": "017"
+                        },
+                        {
+                            "id": "satisfactoryAccounts",
+                            "value": "016"
+                        },
+                        {
+                            "id": "nowDelinquentDerog",
+                            "value": "000"
+                        },
+                        {
+                            "id": "wasDelinquentDerog",
+                            "value": "005"
+                        },
+                        {
+                            "id": "oldestTradeDate",
+                            "value": "02151991"
+                        },
+                        {
+                            "id": "delinquencies30Days",
+                            "value": "09"
+                        },
+                        {
+                            "id": "delinquencies60Days",
+                            "value": "01"
+                        },
+                        {
+                            "id": "delinquencies90to180Days",
+                            "value": "00"
+                        },
+                        {
+                            "id": "derogCounter",
+                            "value": "00"
+                        }
+                    ]
+                }
+            ],
+            "publicRecord": [
+                {
+                    "amount": "00000451",
+                    "bookPageSequence": "SQ03738016",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "01282014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000447",
+                    "bookPageSequence": "SQ03747196",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02022014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000446",
+                    "bookPageSequence": "SQ03760332",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02032014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000444",
+                    "bookPageSequence": "SQ03760937",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02032014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000439",
+                    "bookPageSequence": "SQ03825019",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02242014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000441",
+                    "bookPageSequence": "SQ03825880",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02242014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000451",
+                    "bookPageSequence": "SQ03838256",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02282014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000441",
+                    "bookPageSequence": "SQ03952980",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04182014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000437",
+                    "bookPageSequence": "SQ04015024",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "05112014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000434",
+                    "bookPageSequence": "SQ04015690",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "05112014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000434",
+                    "bookPageSequence": "SQ04100071",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "06062014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000435",
+                    "bookPageSequence": "SQ04321755",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "11222014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000437",
+                    "bookPageSequence": "SQ04321757",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "11222014",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000523",
+                    "bookPageSequence": "SQ04822044",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "08192016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000525",
+                    "bookPageSequence": "SQ04836784",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "08282016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000527",
+                    "bookPageSequence": "SQ04837126",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "08282016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000521",
+                    "bookPageSequence": "SQ04850348",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "09042016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000520",
+                    "bookPageSequence": "SQ04850420",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "09042016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000518",
+                    "bookPageSequence": "SQ04852506",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "09042016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000517",
+                    "bookPageSequence": "SQ04898331",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "09232016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000515",
+                    "bookPageSequence": "SQ04899719",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "09232016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000513",
+                    "bookPageSequence": "SQ04900024",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "09232016",
+                    "status": "33",
+                    "statusDate": "09162017"
+                },
+                {
+                    "amount": "00000503",
+                    "bookPageSequence": "SQ05201450",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "06122017",
+                    "status": "32",
+                    "statusDate": "06122017"
+                },
+                {
+                    "amount": "00000505",
+                    "bookPageSequence": "SQ05180685",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "06052017",
+                    "status": "32",
+                    "statusDate": "06052017"
+                },
+                {
+                    "amount": "00000505",
+                    "bookPageSequence": "SQ05142395",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04272017",
+                    "status": "32",
+                    "statusDate": "04272017"
+                },
+                {
+                    "amount": "00000512",
+                    "bookPageSequence": "SQ04957988",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10102016",
+                    "status": "32",
+                    "statusDate": "10102016"
+                },
+                {
+                    "amount": "00000531",
+                    "bookPageSequence": "SQ04764825",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "07282016",
+                    "status": "32",
+                    "statusDate": "07282016"
+                },
+                {
+                    "amount": "00000537",
+                    "bookPageSequence": "SQ04688875",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "06262016",
+                    "status": "32",
+                    "statusDate": "06262016"
+                },
+                {
+                    "amount": "00000540",
+                    "bookPageSequence": "SQ04586762",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04282016",
+                    "status": "32",
+                    "statusDate": "04282016"
+                },
+                {
+                    "amount": "00000449",
+                    "bookPageSequence": "SQ04300720",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04172015",
+                    "status": "32",
+                    "statusDate": "04172015"
+                },
+                {
+                    "amount": "00000459",
+                    "bookPageSequence": "SQ04300724",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04172015",
+                    "status": "32",
+                    "statusDate": "04172015"
+                },
+                {
+                    "amount": "00000461",
+                    "bookPageSequence": "SQ04300726",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04172015",
+                    "status": "32",
+                    "statusDate": "04172015"
+                },
+                {
+                    "amount": "00000451",
+                    "bookPageSequence": "SQ04300727",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04172015",
+                    "status": "32",
+                    "statusDate": "04172015"
+                },
+                {
+                    "amount": "00000447",
+                    "bookPageSequence": "SQ04300710",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04172015",
+                    "status": "32",
+                    "statusDate": "04172015"
+                },
+                {
+                    "amount": "00000433",
+                    "bookPageSequence": "SQ04321752",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "11222014",
+                    "status": "33",
+                    "statusDate": "03282015"
+                },
+                {
+                    "amount": "00000443",
+                    "bookPageSequence": "SQ03819626",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02232014",
+                    "status": "32",
+                    "statusDate": "02232014"
+                },
+                {
+                    "amount": "00000452",
+                    "bookPageSequence": "SQ03731955",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "01272014",
+                    "status": "32",
+                    "statusDate": "01272014"
+                },
+                {
+                    "amount": "00000233",
+                    "bookPageSequence": "SQ03128296",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "06262010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000232",
+                    "bookPageSequence": "SQ03128297",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "06262010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000233",
+                    "bookPageSequence": "SQ03193114",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10102010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000234",
+                    "bookPageSequence": "SQ03193126",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10102010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000232",
+                    "bookPageSequence": "SQ03193127",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10102010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000236",
+                    "bookPageSequence": "SQ03274987",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "03182011",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000235",
+                    "bookPageSequence": "SQ03274988",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "03182011",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000234",
+                    "bookPageSequence": "SQ03082779",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000233",
+                    "bookPageSequence": "SQ03082780",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000232",
+                    "bookPageSequence": "SQ03082781",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000231",
+                    "bookPageSequence": "SQ03082782",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "33",
+                    "statusDate": "12012013"
+                },
+                {
+                    "amount": "00000449",
+                    "bookPageSequence": "SQ03554778",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10262013",
+                    "status": "32",
+                    "statusDate": "10262013"
+                },
+                {
+                    "amount": "00000448",
+                    "bookPageSequence": "SQ03556167",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10262013",
+                    "status": "32",
+                    "statusDate": "10262013"
+                },
+                {
+                    "amount": "00000451",
+                    "bookPageSequence": "SQ03554651",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10262013",
+                    "status": "32",
+                    "statusDate": "10262013"
+                },
+                {
+                    "amount": "00000450",
+                    "bookPageSequence": "SQ03510503",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "09072013",
+                    "status": "32",
+                    "statusDate": "09072013"
+                },
+                {
+                    "amount": "00000150",
+                    "bookPageSequence": "SQ02495930",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "02032007",
+                    "status": "33",
+                    "statusDate": "03112013"
+                },
+                {
+                    "amount": "00000147",
+                    "bookPageSequence": "SQ02619952",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10082007",
+                    "status": "33",
+                    "statusDate": "03112013"
+                },
+                {
+                    "amount": "00000375",
+                    "bookPageSequence": "SQ02302656",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "33",
+                    "statusDate": "05282011"
+                },
+                {
+                    "amount": "00000360",
+                    "bookPageSequence": "SQ02302659",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "33",
+                    "statusDate": "05162011"
+                },
+                {
+                    "amount": "00000364",
+                    "bookPageSequence": "SQ02302658",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "33",
+                    "statusDate": "05142011"
+                },
+                {
+                    "amount": "00000370",
+                    "bookPageSequence": "SQ02302657",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "33",
+                    "statusDate": "05142011"
+                },
+                {
+                    "amount": "00000234",
+                    "bookPageSequence": "BK94PG255SQ03082779",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "32",
+                    "statusDate": "04102010"
+                },
+                {
+                    "amount": "00000233",
+                    "bookPageSequence": "BK94PG256SQ03082780",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "32",
+                    "statusDate": "04102010"
+                },
+                {
+                    "amount": "00000232",
+                    "bookPageSequence": "BK94PG257SQ03082781",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "32",
+                    "statusDate": "04102010"
+                },
+                {
+                    "amount": "00000231",
+                    "bookPageSequence": "BK94PG258SQ03082782",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04102010",
+                    "status": "32",
+                    "statusDate": "04102010"
+                },
+                {
+                    "amount": "00000186",
+                    "bookPageSequence": "BK91PG72SQ03017495",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "12272009",
+                    "status": "32",
+                    "statusDate": "12272009"
+                },
+                {
+                    "amount": "00000185",
+                    "bookPageSequence": "BK89PG41SQ02978760",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10242009",
+                    "status": "32",
+                    "statusDate": "10242009"
+                },
+                {
+                    "amount": "00000184",
+                    "bookPageSequence": "BK87PG165SQ02943047",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "08282009",
+                    "status": "32",
+                    "statusDate": "08282009"
+                },
+                {
+                    "amount": "00000185",
+                    "bookPageSequence": "BK87PG166SQ02943048",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "08282009",
+                    "status": "32",
+                    "statusDate": "08282009"
+                },
+                {
+                    "amount": "00000185",
+                    "bookPageSequence": "BK86PG96SQ02921164",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "07292009",
+                    "status": "32",
+                    "statusDate": "07292009"
+                },
+                {
+                    "amount": "00000184",
+                    "bookPageSequence": "BK83PG418SQ02884400",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "04032009",
+                    "status": "32",
+                    "statusDate": "04032009"
+                },
+                {
+                    "amount": "00000184",
+                    "bookPageSequence": "BK83PG225SQ02875041",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "03192009",
+                    "status": "32",
+                    "statusDate": "03192009"
+                },
+                {
+                    "amount": "00000147",
+                    "bookPageSequence": "BK82PG136SQ02855710",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "01242009",
+                    "status": "32",
+                    "statusDate": "01242009"
+                },
+                {
+                    "amount": "00000148",
+                    "bookPageSequence": "BK81PG372SQ02845643",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "01112009",
+                    "status": "32",
+                    "statusDate": "01112009"
+                },
+                {
+                    "amount": "00000147",
+                    "bookPageSequence": "BK81PG30SQ02830824",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "12072008",
+                    "status": "32",
+                    "statusDate": "12072008"
+                },
+                {
+                    "amount": "00000148",
+                    "bookPageSequence": "BK81PG30SQ02830823",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "12072008",
+                    "status": "32",
+                    "statusDate": "12072008"
+                },
+                {
+                    "amount": "00000148",
+                    "bookPageSequence": "BK79PG157SQ02804092",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10182008",
+                    "status": "32",
+                    "statusDate": "10182008"
+                },
+                {
+                    "amount": "00000148",
+                    "bookPageSequence": "BK79PG53SQ02795171",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "10112008",
+                    "status": "32",
+                    "statusDate": "10112008"
+                },
+                {
+                    "amount": "00000147",
+                    "bookPageSequence": "BK77PG128SQ02760398",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "ecoa": "1",
+                    "evaluation": "N",
+                    "filingDate": "08072008",
+                    "status": "32",
+                    "statusDate": "08072008"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ7236",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "01112008",
+                    "referenceNumber": "2656725",
+                    "status": "32",
+                    "statusDate": "01112008"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ71107",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "11282007",
+                    "referenceNumber": "2644279",
+                    "status": "32",
+                    "statusDate": "11282007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ70199",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "11022007",
+                    "referenceNumber": "2627939",
+                    "status": "32",
+                    "statusDate": "11022007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ7034",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "10082007",
+                    "referenceNumber": "2619952",
+                    "status": "32",
+                    "statusDate": "10082007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ69185",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "09142007",
+                    "referenceNumber": "2605306",
+                    "status": "32",
+                    "statusDate": "09142007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ68122",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "08032007",
+                    "referenceNumber": "2585648",
+                    "status": "32",
+                    "statusDate": "08032007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ67109",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "06142007",
+                    "referenceNumber": "2567590",
+                    "status": "32",
+                    "statusDate": "06142007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ6624",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "05112007",
+                    "referenceNumber": "2544436",
+                    "status": "32",
+                    "statusDate": "05112007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ65013",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "04072007",
+                    "status": "32",
+                    "statusDate": "04072007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ65012",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "04072007",
+                    "status": "32",
+                    "statusDate": "04072007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ64129",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "03152007",
+                    "status": "32",
+                    "statusDate": "03152007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ63154",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "02032007",
+                    "status": "32",
+                    "statusDate": "02032007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ63155",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "02032007",
+                    "status": "32",
+                    "statusDate": "02032007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ63156",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "02032007",
+                    "status": "32",
+                    "statusDate": "02032007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ63152",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "02032007",
+                    "status": "32",
+                    "statusDate": "02032007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ63153",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "02032007",
+                    "status": "32",
+                    "statusDate": "02032007"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ60118",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "10292006",
+                    "status": "32",
+                    "statusDate": "10292006"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ57085",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "07072006",
+                    "status": "32",
+                    "statusDate": "07072006"
+                },
+                {
+                    "amount": "00000100",
+                    "bookPageSequence": "SQ54278",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "05052006",
+                    "status": "32",
+                    "statusDate": "05052006"
+                },
+                {
+                    "amount": "00000300",
+                    "bookPageSequence": "SQ52275",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "03122006",
+                    "status": "32",
+                    "statusDate": "03122006"
+                },
+                {
+                    "amount": "00000300",
+                    "bookPageSequence": "SQ52222",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "32",
+                    "statusDate": "03092006"
+                },
+                {
+                    "amount": "00000300",
+                    "bookPageSequence": "SQ52223",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "32",
+                    "statusDate": "03092006"
+                },
+                {
+                    "amount": "00000300",
+                    "bookPageSequence": "SQ52224",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "32",
+                    "statusDate": "03092006"
+                },
+                {
+                    "amount": "00000300",
+                    "bookPageSequence": "SQ52225",
+                    "courtCode": "2048653",
+                    "courtName": "LA PORTE COUNTY RECORD",
+                    "evaluation": "N",
+                    "filingDate": "03092006",
+                    "status": "32",
+                    "statusDate": "03092006"
+                }
+            ],
+            "riskModel": [
+                {
+                    "evaluation": "P",
+                    "modelIndicator": "RC",
+                    "score": "0783",
+                    "scoreFactors": [
+                        {
+                            "importance": "1",
+                            "code": "11"
+                        },
+                        {
+                            "importance": "2",
+                            "code": "12"
+                        },
+                        {
+                            "importance": "3",
+                            "code": "10"
+                        },
+                        {
+                            "importance": "4",
+                            "code": "13"
+                        }
+                    ]
+                }
+            ],
+            "ssn": [
+                {
+                    "number": "111111111",
+                    "ssnIndicators": "YYYYYYYYY"
+                }
+            ],
+            "tradeline": [
+                {
+                    "accountNumber": "0000000000000",
+                    "accountType": "25",
+                    "amount1": "00037000",
+                    "amount1Qualifier": "O",
+                    "balanceDate": "09052013",
+                    "delinquencies30Days": "03",
+                    "delinquencies60Days": "01",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "05",
+                        "enhancedAccountType": "25",
+                        "enhancedPaymentHistory84": "BCCCCCCCC-CCCCCCCCCCCCCC1121CC",
+                        "enhancedPaymentStatus": "37",
+                        "enhancedSpecialComment": "31",
+                        "enhancedTerms": "360",
+                        "firstDelinquencyDate": "09012011",
+                        "maxDelinquencyCode": "2",
+                        "originalLoanAmount": "0000037000",
+                        "paymentLevelDate": "09012013",
+                        "secondDelinquencyDate": "08012011"
+                    },
+                    "evaluation": "N",
+                    "kob": "FL",
+                    "maxDelinquencyDate": "07012011",
+                    "monthsHistory": "30",
+                    "openDate": "10082008",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCC-CCCCCCCCCCCCCC1",
+                    "revolvingOrInstallment": "I",
+                    "specialComment": "31",
+                    "status": "05",
+                    "statusDate": "09012013",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "AURORA LOAN SERVICES I",
+                    "terms": "360"
+                },
+                {
+                    "accountNumber": "0000000000",
+                    "accountType": "07",
+                    "amount1": "00000800",
+                    "amount1Qualifier": "L",
+                    "amount2": "00000181",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "03012015",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "4",
+                    "enhancedPaymentData": {
+                        "creditLimitAmount": "0000000800",
+                        "enhancedAccountCondition": "05",
+                        "enhancedAccountType": "07",
+                        "enhancedPaymentHistory84": "B00--000000000C-0000-----0CC----------0CC----0000CCC------0CCCCC-CCCC-CCCCCC--------",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "REV",
+                        "highBalanceAmount": "0000000181",
+                        "paymentLevelDate": "03012015"
+                    },
+                    "evaluation": "P",
+                    "kob": "DC",
+                    "monthsHistory": "99",
+                    "openDate": "03011995",
+                    "openOrClosed": "C",
+                    "paymentHistory": "B00--000000000C-0000-----",
+                    "revolvingOrInstallment": "R",
+                    "status": "05",
+                    "statusDate": "03012015",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "NBGL-CARSONS",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "2111",
+                    "accountType": "15",
+                    "amount1": "00002000",
+                    "amount1Qualifier": "L",
+                    "amount2": "00001487",
+                    "amount2Qualifier": "H",
+                    "balanceAmount": "00000000",
+                    "balanceDate": "04202008",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "creditLimitAmount": "0000002000",
+                        "enhancedAccountCondition": "A3",
+                        "enhancedAccountType": "15",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedSpecialComment": "18",
+                        "enhancedTerms": "LOC",
+                        "highBalanceAmount": "0000001487",
+                        "paymentLevelDate": "04012008"
+                    },
+                    "evaluation": "N",
+                    "kob": "BB",
+                    "lastPaymentDate": "03042006",
+                    "monthsHistory": "99",
+                    "openDate": "01161999",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "18",
+                    "status": "11",
+                    "statusDate": "04012008",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "CHASE ADVG",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000",
+                    "accountType": "18",
+                    "amount1": "00000650",
+                    "amount1Qualifier": "L",
+                    "amount2": "00000273",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "01162018",
+                    "delinquencies30Days": "02",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "complianceCondition": "XA",
+                        "creditLimitAmount": "0000000650",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "18",
+                        "enhancedPaymentHistory84": "B00CCCC1CCCCC1CCC0000-0CC000000C0C0C0000000000000-00C0CCCCCCCCCCC",
+                        "enhancedPaymentStatus": "32",
+                        "enhancedSpecialComment": "19",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "firstDelinquencyDate": "06012017",
+                        "highBalanceAmount": "0000000273",
+                        "paymentLevelDate": "01012018",
+                        "secondDelinquencyDate": "12012016"
+                    },
+                    "evaluation": "N",
+                    "kob": "BC",
+                    "lastPaymentDate": "11112017",
+                    "monthsHistory": "65",
+                    "openDate": "02151991",
+                    "openOrClosed": "C",
+                    "paymentHistory": "B00CCCC1CCCCC1CCC0000-0CC",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "19",
+                    "status": "52",
+                    "statusDate": "01012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "SHELL/CITI",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000000",
+                    "accountType": "07",
+                    "amount1": "00002530",
+                    "amount1Qualifier": "L",
+                    "amount2": "00002456",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "02012018",
+                    "delinquencies30Days": "01",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "complianceCondition": "XA",
+                        "creditLimitAmount": "0000002530",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "07",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC0C0000C0C00CCCCCCCCCCCCCCCCCCCCCCCCCCCCC1CCCC",
+                        "enhancedPaymentStatus": "31",
+                        "enhancedSpecialComment": "19",
+                        "enhancedTerms": "REV",
+                        "firstDelinquencyDate": "07012011",
+                        "highBalanceAmount": "0000002456",
+                        "maxDelinquencyCode": "1",
+                        "paymentLevelDate": "02012018"
+                    },
+                    "evaluation": "N",
+                    "kob": "DC",
+                    "lastPaymentDate": "11282017",
+                    "maxDelinquencyDate": "07012011",
+                    "monthsHistory": "99",
+                    "openDate": "03011991",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "19",
+                    "status": "51",
+                    "statusDate": "02012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "SEARS/CBSD",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000",
+                    "accountType": "18",
+                    "amount1": "00000550",
+                    "amount1Qualifier": "L",
+                    "amount2": "00000185",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "01142018",
+                    "delinquencies30Days": "01",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "complianceCondition": "XA",
+                        "creditLimitAmount": "0000000550",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "18",
+                        "enhancedPaymentHistory84": "B000000CC0C1CC000000000C00000C000C00000000C0000000000CC0000000000",
+                        "enhancedPaymentStatus": "31",
+                        "enhancedSpecialComment": "19",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "firstDelinquencyDate": "02012017",
+                        "highBalanceAmount": "0000000185",
+                        "paymentLevelDate": "01012018"
+                    },
+                    "evaluation": "N",
+                    "kob": "BC",
+                    "lastPaymentDate": "06242017",
+                    "monthsHistory": "65",
+                    "openDate": "07281991",
+                    "openOrClosed": "C",
+                    "paymentHistory": "B000000CC0C1CC000000000C0",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "19",
+                    "status": "51",
+                    "statusDate": "01012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "CITGO/CBSD",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000000",
+                    "accountType": "18",
+                    "amount1": "00008870",
+                    "amount1Qualifier": "L",
+                    "balanceDate": "02202018",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "3",
+                    "enhancedPaymentData": {
+                        "complianceCondition": "XA",
+                        "creditLimitAmount": "0000008870",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "18",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedSpecialComment": "19",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "paymentLevelDate": "02012018"
+                    },
+                    "evaluation": "N",
+                    "kob": "BC",
+                    "lastPaymentDate": "01092018",
+                    "monthsHistory": "99",
+                    "openDate": "09012004",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "19",
+                    "status": "12",
+                    "statusDate": "02012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "CITI",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "0000000000",
+                    "accountType": "07",
+                    "amount1": "00000500",
+                    "amount1Qualifier": "L",
+                    "amount2": "00000496",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "02162018",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "complianceCondition": "XA",
+                        "creditLimitAmount": "0000000500",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "07",
+                        "enhancedPaymentHistory84": "B000000000000000000000000000000000CCCCCC000000000000CCCCCCCCCCCCCCCCCCCCCCCCC00CCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedSpecialComment": "19",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "highBalanceAmount": "0000000496",
+                        "paymentLevelDate": "02012018"
+                    },
+                    "evaluation": "N",
+                    "kob": "DC",
+                    "lastPaymentDate": "04052015",
+                    "monthsHistory": "99",
+                    "openDate": "03191991",
+                    "openOrClosed": "C",
+                    "paymentHistory": "B000000000000000000000000",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "19",
+                    "status": "12",
+                    "statusDate": "02012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "GEMB/JCP",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000000",
+                    "accountType": "18",
+                    "amount1": "00005100",
+                    "amount1Qualifier": "L",
+                    "amount2": "00005082",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "01172018",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "3",
+                    "enhancedPaymentData": {
+                        "complianceCondition": "XA",
+                        "creditLimitAmount": "0000005100",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "18",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCC0",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedSpecialComment": "19",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "highBalanceAmount": "0000005082",
+                        "paymentLevelDate": "01012018"
+                    },
+                    "evaluation": "N",
+                    "kob": "BC",
+                    "lastPaymentDate": "01122018",
+                    "monthsHistory": "24",
+                    "openDate": "02212016",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCC0",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "19",
+                    "status": "12",
+                    "statusDate": "01012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "DISCOVER FIN SVCS LLC",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "0000000000",
+                    "accountType": "00",
+                    "amount1": "00022661",
+                    "amount1Qualifier": "O",
+                    "balanceDate": "12302017",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "00",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC-CCCCCCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "060",
+                        "originalLoanAmount": "0000022661",
+                        "paymentLevelDate": "12012017"
+                    },
+                    "evaluation": "P",
+                    "kob": "BB",
+                    "lastPaymentDate": "11282017",
+                    "monthsHistory": "44",
+                    "openDate": "05152014",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "I",
+                    "status": "12",
+                    "statusDate": "12012017",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "NCB IND",
+                    "terms": "060"
+                },
+                {
+                    "accountNumber": "000000000",
+                    "accountType": "47",
+                    "amount1": "00020900",
+                    "amount1Qualifier": "L",
+                    "amount2": "00020900",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "11282017",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "creditLimitAmount": "0000020900",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "89",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "LOC",
+                        "highBalanceAmount": "0000020900",
+                        "paymentLevelDate": "11012017"
+                    },
+                    "evaluation": "P",
+                    "kob": "BB",
+                    "lastPaymentDate": "11272017",
+                    "monthsHistory": "35",
+                    "openDate": "01252015",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "R",
+                    "status": "12",
+                    "statusDate": "11012017",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "FIRST FEDERAL SAVINGS",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000",
+                    "accountType": "26",
+                    "amount1": "00060000",
+                    "amount1Qualifier": "O",
+                    "balanceDate": "11282017",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "26",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "180",
+                        "originalLoanAmount": "0000060000",
+                        "paymentLevelDate": "11012017",
+                        "secondaryAgencyCode": "02",
+                        "secondaryAgencyId": "520298977"
+                    },
+                    "evaluation": "P",
+                    "kob": "BB",
+                    "lastPaymentDate": "11272017",
+                    "monthsHistory": "48",
+                    "openDate": "12142013",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "I",
+                    "status": "12",
+                    "statusDate": "11012017",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "FIRST FEDERAL SAVINGS",
+                    "terms": "180"
+                },
+                {
+                    "accountNumber": "0000000000000000",
+                    "accountType": "18",
+                    "amount1": "00003000",
+                    "amount1Qualifier": "L",
+                    "amount2": "00002629",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "02082014",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "creditLimitAmount": "0000003000",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "18",
+                        "enhancedPaymentHistory84": "BC0CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedSpecialComment": "18",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "highBalanceAmount": "0000002629",
+                        "paymentLevelDate": "02012014"
+                    },
+                    "evaluation": "N",
+                    "kob": "BC",
+                    "monthsHistory": "42",
+                    "openDate": "08012005",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BC0CCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "18",
+                    "status": "12",
+                    "statusDate": "02012014",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "HSBC NV",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000000",
+                    "accountType": "18",
+                    "amount1": "00003100",
+                    "amount1Qualifier": "L",
+                    "amount2": "00003354",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "02042014",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "creditLimitAmount": "0000003100",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "18",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC---CCCCCCCCC-C----CC-CCCCCC-CCCC-CCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedSpecialComment": "18",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "highBalanceAmount": "0000003354",
+                        "paymentLevelDate": "02012014"
+                    },
+                    "evaluation": "N",
+                    "kob": "BC",
+                    "monthsHistory": "96",
+                    "openDate": "02252006",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "18",
+                    "status": "12",
+                    "statusDate": "02012014",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "BAC/FLEET-BKCARD",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "0000000",
+                    "accountType": "25",
+                    "amount1": "00037000",
+                    "amount1Qualifier": "O",
+                    "balanceDate": "12012013",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "25",
+                        "enhancedPaymentHistory84": "BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "360",
+                        "originalLoanAmount": "0000037000",
+                        "paymentLevelDate": "12012013",
+                        "secondaryAgencyCode": "02",
+                        "secondaryAgencyId": "64574059"
+                    },
+                    "evaluation": "P",
+                    "kob": "FM",
+                    "monthsHistory": "99",
+                    "openDate": "06011997",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BCCCCCCCCCCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "I",
+                    "status": "12",
+                    "statusDate": "12012013",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "COUNTRYWIDE HOME LOANS",
+                    "terms": "360"
+                },
+                {
+                    "accountNumber": "0000000000",
+                    "accountType": "18",
+                    "amount1": "00002000",
+                    "amount1Qualifier": "L",
+                    "amount2": "00000581",
+                    "amount2Qualifier": "H",
+                    "balanceDate": "06012010",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "creditLimitAmount": "0000002000",
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "18",
+                        "enhancedPaymentHistory84": "BC-CCC--CCCC-C-CCCC--CC--CCCCC-CCCCC--CCCCC--CCC-CC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedSpecialComment": "18",
+                        "enhancedTerms": "REV",
+                        "highBalanceAmount": "0000000581",
+                        "paymentLevelDate": "06012010"
+                    },
+                    "evaluation": "N",
+                    "kob": "BC",
+                    "monthsHistory": "99",
+                    "openDate": "04011997",
+                    "openOrClosed": "C",
+                    "paymentHistory": "BC-CCC--CCCC-C-CCCC--CC--",
+                    "revolvingOrInstallment": "R",
+                    "specialComment": "18",
+                    "status": "12",
+                    "statusDate": "06012010",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "CHASE",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000",
+                    "accountType": "00",
+                    "amount1": "00012179",
+                    "amount1Qualifier": "O",
+                    "balanceDate": "02282010",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "7",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "A2",
+                        "enhancedAccountType": "00",
+                        "enhancedPaymentHistory84": "B-CCCCCC-CCCCCCCCCCCCCCCCCCCCCC-CCCCCCCCCCC-CCCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "048",
+                        "originalLoanAmount": "0000012179",
+                        "paymentLevelDate": "02012010"
+                    },
+                    "evaluation": "P",
+                    "kob": "BB",
+                    "monthsHistory": "51",
+                    "openDate": "12172005",
+                    "openOrClosed": "C",
+                    "paymentHistory": "B-CCCCCC-CCCCCCCCCCCCCCCC",
+                    "revolvingOrInstallment": "I",
+                    "status": "12",
+                    "statusDate": "02012010",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "UNION FEDERAL SAVINGS",
+                    "terms": "048"
+                },
+                {
+                    "accountNumber": "0000000000",
+                    "accountType": "07",
+                    "amount1": "00000158",
+                    "amount1Qualifier": "L",
+                    "amount2": "00000181",
+                    "amount2Qualifier": "H",
+                    "balanceAmount": "00000000",
+                    "balanceDate": "02202018",
+                    "delinquencies30Days": "02",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "creditLimitAmount": "0000000158",
+                        "enhancedAccountCondition": "A1",
+                        "enhancedAccountType": "07",
+                        "enhancedPaymentHistory84": "0CCCC1CCCCCCC1CCCCCCCCCCCCCCCCCCCCCC",
+                        "enhancedPaymentStatus": "32",
+                        "enhancedTerms": "REV",
+                        "enhancedTermsFrequency": "M",
+                        "firstDelinquencyDate": "09012017",
+                        "highBalanceAmount": "0000000181",
+                        "paymentLevelDate": "10012017",
+                        "secondDelinquencyDate": "01012017"
+                    },
+                    "evaluation": "N",
+                    "kob": "FZ",
+                    "lastPaymentDate": "11042017",
+                    "monthsHistory": "36",
+                    "openDate": "03011995",
+                    "openOrClosed": "O",
+                    "paymentHistory": "0CCCC1CCCCCCC1CCCCCCCCCCC",
+                    "revolvingOrInstallment": "R",
+                    "status": "32",
+                    "statusDate": "10012017",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "HSBC/CARSN",
+                    "terms": "REV"
+                },
+                {
+                    "accountNumber": "000000000",
+                    "accountType": "26",
+                    "amount1": "00122000",
+                    "amount1Qualifier": "O",
+                    "balanceAmount": "00121892",
+                    "balanceDate": "01282018",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "2",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "A1",
+                        "enhancedAccountType": "26",
+                        "enhancedPaymentHistory84": "CCC",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "360",
+                        "originalLoanAmount": "0000122000",
+                        "paymentLevelDate": "01012018",
+                        "secondaryAgencyCode": "02",
+                        "secondaryAgencyId": "319421767"
+                    },
+                    "evaluation": "P",
+                    "kob": "BB",
+                    "lastPaymentDate": "01062018",
+                    "monthlyPaymentAmount": "00000956",
+                    "monthlyPaymentType": "S",
+                    "monthsHistory": "03",
+                    "openDate": "11212017",
+                    "openOrClosed": "O",
+                    "paymentHistory": "CCC",
+                    "revolvingOrInstallment": "I",
+                    "status": "11",
+                    "statusDate": "01012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "FIRST FEDERAL SAVINGS",
+                    "terms": "360"
+                },
+                {
+                    "accountNumber": "0000000000",
+                    "accountType": "12",
+                    "amount1": "00012000",
+                    "amount1Qualifier": "O",
+                    "balanceAmount": "00011135",
+                    "balanceDate": "01282018",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "A1",
+                        "enhancedAccountType": "12",
+                        "enhancedPaymentHistory84": "C",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "119",
+                        "originalLoanAmount": "0000012000",
+                        "paymentLevelDate": "01012018"
+                    },
+                    "evaluation": "P",
+                    "kob": "EL",
+                    "monthsHistory": "01",
+                    "openDate": "10202016",
+                    "openOrClosed": "O",
+                    "paymentHistory": "C",
+                    "revolvingOrInstallment": "I",
+                    "status": "11",
+                    "statusDate": "01012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "US DEPT OF EDUCATION",
+                    "terms": "119"
+                },
+                {
+                    "accountNumber": "0000000000",
+                    "accountType": "12",
+                    "amount1": "00012275",
+                    "amount1Qualifier": "O",
+                    "balanceAmount": "00010277",
+                    "balanceDate": "01282018",
+                    "delinquencies30Days": "00",
+                    "delinquencies60Days": "00",
+                    "delinquencies90to180Days": "00",
+                    "derogCounter": "00",
+                    "ecoa": "1",
+                    "enhancedPaymentData": {
+                        "enhancedAccountCondition": "A1",
+                        "enhancedAccountType": "12",
+                        "enhancedPaymentHistory84": "C",
+                        "enhancedPaymentStatus": "11",
+                        "enhancedTerms": "119",
+                        "originalLoanAmount": "0000012275",
+                        "paymentLevelDate": "01012018"
+                    },
+                    "evaluation": "P",
+                    "kob": "EL",
+                    "monthsHistory": "01",
+                    "openDate": "07232015",
+                    "openOrClosed": "O",
+                    "paymentHistory": "C",
+                    "revolvingOrInstallment": "I",
+                    "status": "11",
+                    "statusDate": "01012018",
+                    "subscriberCode": "2222222",
+                    "subscriberName": "US DEPT OF EDUCATION",
+                    "terms": "119"
+                }
+            ],
+            "covidSpotlightAttributes": [
+                {
+                    "modelTypeIndicator": "CS",
+                    "covidAttributes": [
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_ALL0302",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_ALL0303",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_ALL0305",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL0309",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL0419",
+                            "signofAttribute": "+",
+                            "attributeValue": "01"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0481",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0483",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0484",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0485",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0487",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0488",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0491",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0494",
+                            "signofAttribute": "+",
+                            "attributeValue": "92"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0495",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0496",
+                            "signofAttribute": "+",
+                            "attributeValue": "9998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0497",
+                            "signofAttribute": "+",
+                            "attributeValue": "9998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0707",
+                            "signofAttribute": "+",
+                            "attributeValue": "000"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL0708",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_ALL0716",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_ALL0726",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL0813",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL0840",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL0923",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL0999",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1207",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1401",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1701",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1702",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1703",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1704",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1705",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL1706",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "01"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL5094",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL5193",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL5302",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL5303",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALL5483",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "000006387"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALL5923",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALS0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALS0486",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS0813",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS0840",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "01"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS5094",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS5193",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TALS5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "000006387"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_ALS5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA0112",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0484",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0485",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0487",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0488",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0491",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0707",
+                            "signofAttribute": "+",
+                            "attributeValue": "000"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA0708",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA0813",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA0840",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1207",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1401",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1701",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1702",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1703",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1704",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1705",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA1706",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "01"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA5094",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA5193",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TAUA5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "000006387"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_AUA5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA2601",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA2602",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA2603",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA2604",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999996"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA3601",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA3602",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA3603",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCA3604",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999996"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC0484",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC0485",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC0486",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC0487",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC0488",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC0491",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_BCC0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1207",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1401",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1501",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1701",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1702",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1703",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1704",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1705",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC1706",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC2503",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999996"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC2504",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC2506",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC2507",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC3503",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999996"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC3504",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC3506",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC3507",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_BCC3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TBCC5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_BCC5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_BCC5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_BUS0436",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_BUS5436",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL0483",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_COL2409",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_COL2923",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TCOL5483",
+                            "signofAttribute": "+",
+                            "attributeValue": "000000000"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_COL5933",
+                            "signofAttribute": "+",
+                            "attributeValue": "000000000"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC2601",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC2602",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC2603",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC2604",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC3601",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC3602",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC3603",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_THLC3604",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQA9421",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQA9423",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQB9421",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQB9423",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQF9421",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQF9423",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQG9421",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQG9423",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQM9421",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQM9423",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQR9421",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQR9423",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_IQT9420",
+                            "signofAttribute": "+",
+                            "attributeValue": "11"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_IQT9421",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P13_IQT9423",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQU9420",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_IQX9420",
+                            "signofAttribute": "+",
+                            "attributeValue": "11"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTA0112",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTA0302",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTA0303",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTA0419",
+                            "signofAttribute": "+",
+                            "attributeValue": "01"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTA5302",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTA5303",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0484",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0485",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0487",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0488",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0489",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0490",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0491",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0492",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0493",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0707",
+                            "signofAttribute": "+",
+                            "attributeValue": "997"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF0708",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF0813",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF0848",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF0849",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1207",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1401",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1701",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1702",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1703",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1704",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1705",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF1706",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF5098",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF5099",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF5193",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TMTF5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999997"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTF5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTS0840",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_MTS5094",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL0484",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL0485",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL0486",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_PIL0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1207",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1401",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1701",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1702",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1703",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1704",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1705",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL1706",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_PIL3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TPIL5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_PIL5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999997"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_PIL5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR0484",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR0485",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR0486",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_RTR0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        }
+                    ]
+                },
+                {
+                    "modelTypeIndicator": "CS",
+                    "covidAttributes": [
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1207",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1401",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1501",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1701",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1702",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1703",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1704",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1705",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR1706",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2503",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999996"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2504",
+                            "signofAttribute": "+",
+                            "attributeValue": "96"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2506",
+                            "signofAttribute": "+",
+                            "attributeValue": "96"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2507",
+                            "signofAttribute": "+",
+                            "attributeValue": "96"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2601",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2602",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2603",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR2604",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999996"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3503",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3504",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3506",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3507",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_RTR3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3601",
+                            "signofAttribute": "+",
+                            "attributeValue": "00"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3602",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3603",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR3604",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999996"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TRTR5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_RTR5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999995"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_RTR5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU0482",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU0484",
+                            "signofAttribute": "+",
+                            "attributeValue": "992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU0485",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU0487",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU0488",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU0491",
+                            "signofAttribute": "+",
+                            "attributeValue": "998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU0813",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU0840",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU0913",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1201",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1202",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1203",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1204",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1205",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1206",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1207",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1401",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1701",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1702",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1703",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1704",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1705",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU1706",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999992"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU3580",
+                            "signofAttribute": "+",
+                            "attributeValue": "98"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU5094",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU5193",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "TRENDED 3D ATTRIBUTES",
+                            "variableName": "T12_TSTU5482",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU5580",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        },
+                        {
+                            "modelTypeName": "PREMIER ATTRIBUTES",
+                            "variableName": "P14_STU5913",
+                            "signofAttribute": "+",
+                            "attributeValue": "999999998"
+                        }
+                    ]
+                }
+            ],
+            "endTotals": [
+                {
+                    "totalSegments": "138",
+                    "totalLength": "20797"
+                }
+            ]
+        }
+    ]
+}
