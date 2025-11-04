@@ -9,7 +9,7 @@
 
 ### Example Experian clients
 
-Only this example is currently working.
+Working examples
 
 ```bash
 uv run src/01-experian-business.py
@@ -40,9 +40,10 @@ INFO:root:{
 }
 ```
  
-### Consumer Credit Report (sandbox)
+### Consumer Credit Report 
 
-This example calls the Experian Consumer Credit Profile v2 credit report endpoint. It requires extra org identifiers in addition to your OAuth credentials.
+This example calls the Experian Consumer Credit Profile v2 credit report endpoint. 
+It requires extra org identifiers in addition to your OAuth credentials.
 
 1) Create an `.env` file (you can copy from `dot_env`) and set the following:
 
@@ -51,19 +52,14 @@ EXPERIAN_USERNAME="..."
 EXPERIAN_PASSWORD="..."
 EXPERIAN_CLIENT_ID="..."
 EXPERIAN_CLIENT_SECRET="..."
-
-# Required for the credit-profile v2 API
-EXPERIAN_COMPANY_ID="<your company id>"
-EXPERIAN_SUBSCRIBER_CODE="<your subscriber code>"
 ```
 
 2) Run:
 
 ```bash
-uv run src/experian-credit-report.py
+uv run src/02-experian-credit-report.py 2> output.json
 ```
 
-If `EXPERIAN_COMPANY_ID` is missing, the script will fail fast with a helpful error (the API requires `companyId` as a header). If the request still returns a 400, double‑check your permissible purpose, company/subscriber codes, and that your sandbox account is entitled for Consumer Credit Profile.
 
 Output
 ```bash
