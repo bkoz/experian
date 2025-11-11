@@ -6,7 +6,7 @@ import dotenv
 
 # Load environment from .env and fallback to dot_env if present
 dotenv.load_dotenv(".env")
-dotenv.load_dotenv("dot_env")
+# dotenv.load_dotenv("dot_env")
 
 # Logging setup
 logging.basicConfig(level=logging.INFO)
@@ -64,28 +64,6 @@ def build_credit_report_request() -> dict:
 
     Fields intentionally minimal for sandbox; adjust as needed.
     """
-    # Basic consumer identity for sandbox
-    consumer_pii = {
-        "names": [
-            {
-                "firstName": "John",
-                "surname": "Doe",
-            }
-        ],
-        "dob": {
-            "dob": "1980-01-01",
-        },
-        "ssn": "999999999",
-        "addresses": [
-            {
-                "street": "123 Main St",
-                "city": "Anytown",
-                "state": "CA",
-                "zipCode": "90210",
-                "type": "current",
-            }
-        ],
-    }
 
     requestor = {}
     if SUBSCRIBER_CODE:
@@ -93,17 +71,7 @@ def build_credit_report_request() -> dict:
     if COMPANY_ID:
         requestor["companyId"] = COMPANY_ID
 
-    body = {
-        "permissiblePurpose": {
-            # ACCOUNT_REVIEW is a common sandbox purpose; adjust per your agreement
-            "type": "ACCOUNT_REVIEW",
-        },
-        "requestor": requestor,
-        "consumerPii": consumer_pii,
-        # Optional: include client reference for traceability
-        "clientReferenceId": CLIENT_REFERENCE_ID,
-    }
-    body = {"consumerPii": { "primaryApplicant": { "name": { "lastName": "CANN", "firstName": "JOHN", "middleName": "N" }, "dob": { "dob": "1955" }, "ssn": { "ssn": "111111111" }, "currentAddress": { "line1": "510 MONDRE ST", "city": "MICHIGAN CITY", "state": "IN", "zipCode": "46360" } } }, "requestor": { "subscriberCode": "2222222" }, "permissiblePurpose": { "type": "08" }, "resellerInfo": { "endUserName": "CPAPIV2TC21" }, "vendorData": { "vendorNumber": "072", "vendorVersion": "V1.29" }, "addOns": { "directCheck": "", "demographics": "Only Phone", "clarityEarlyRiskScore": "Y", "liftPremium": "Y", "clarityData": { "clarityAccountId": "0000000", "clarityLocationId": "000000", "clarityControlFileName": "test_file", "clarityControlFileVersion": "0000000" }, "renterRiskScore": "N", "rentBureauData": { "primaryApplRentBureauFreezePin": "1234", "secondaryApplRentBureauFreezePin": "112233" }, "riskModels": { "modelIndicator": [ "" ], "scorePercentile": "" }, "summaries": { "summaryType": [ "" ] }, "fraudShield": "Y", "mla": "", "ofacmsg": "", "consumerIdentCheck": { "getUniqueConsumerIdentifier": "" }, "joint": "", "paymentHistory84": "", "syntheticId": "N", "taxRefundLoan": "Y", "sureProfile": "Y", "incomeAndEmploymentReport": "Y", "incomeAndEmploymentReportData": { "verifierName": "Experian", "reportType": "ExpVerify-Plus" } }, "customOptions": { "optionId": [ "COADEX" ] } }
+    body = json.load(open("data/rent.json"))
 
     return body
 
