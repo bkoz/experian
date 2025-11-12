@@ -5,8 +5,6 @@ import logging
 import dotenv
 
 dotenv.load_dotenv(".env")
-dotenv.dotenv_values()
-
 
 USERNAME = os.getenv("EXPERIAN_USERNAME")
 PASSWORD = os.getenv("EXPERIAN_PASSWORD")
@@ -22,7 +20,6 @@ payload = {
 }
 
 logging.basicConfig(level=logging.INFO)
-logging.debug(f'{payload=}')
 
 headers = {
     "Accept": "application/json",
@@ -50,12 +47,6 @@ if access_token:
 
     # Define query parameters for a GET request (example parameters)
 
-    params = {
-      "name": "Experian",
-      "city": "Costa Mesa",
-      "state": "CA",
-#     "subcode": "0563736",
-    }
     params = {
         "bin": "807205801",
         "subcode": "0586548"

@@ -4,9 +4,7 @@ import os
 import logging
 import dotenv
 
-# Load environment from .env and fallback to dot_env if present
 dotenv.load_dotenv(".env")
-# dotenv.load_dotenv("dot_env")
 
 # Logging setup
 logging.basicConfig(level=logging.INFO)
@@ -16,6 +14,10 @@ USERNAME = os.getenv("EXPERIAN_USERNAME")
 PASSWORD = os.getenv("EXPERIAN_PASSWORD")
 CLIENT_ID = os.getenv("EXPERIAN_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EXPERIAN_CLIENT_SECRET")
+
+if USERNAME == None or PASSWORD == None or CLIENT_ID == None or CLIENT_SECRET == None:
+    logging.error("Experian USERNAME, PASSWORD, CLIENT_ID or CLIENT_SECRET not set in environment variables. Exiting.")
+    exit(1)
 
 # --- Consumer Credit required org identifiers ---
 COMPANY_ID = os.getenv("EXPERIAN_COMPANY_ID")  # Required for consumer credit API
@@ -47,7 +49,6 @@ def get_access_token() -> str | None:
 
     try:
         logging.debug(f"Token request headers: {headers}")
-        logging.debug(f"Token payload: {payload}")
         resp = requests.post(TOKEN_URL, data=payload, headers=headers)
         logging.debug(f"Token response: {resp.status_code} {resp.text}")
         resp.raise_for_status()
