@@ -92,3 +92,33 @@ cat output.json |jq .creditProfile[0].riskModel
   }
 ]
 ```
+
+#### MCP Server Testing
+```bash
+uv add mcp[cli] fastmcp
+```
+
+```bash
+npx modelcontextprotocol/inspector --cli --method=tools/list -- uv run mcp run src/00-experian-mcp-server.py
+```
+```bash
+npx @modelcontextprotocol/inspector --cli --method=prompts/list -- uv run mcp run src/00-experian-mcp-server.py
+```
+
+```bash
+npx @modelcontextprotocol/inspector --cli --method=prompts/get --prompt-name=build_credit_score_prompt --prompt-args=score=730 -- uv run mcp run src/00-experian-mcp-server.py
+```
+```json
+{
+  "description": "",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "type": "text",
+        "text": "You are a financial assistant. Generate a loan risk assessment for an applicant with a credit score of 730."
+      }
+    }
+  ]
+}
+```
