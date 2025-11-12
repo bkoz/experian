@@ -101,6 +101,12 @@ uv add mcp[cli] fastmcp
 ```bash
 npx modelcontextprotocol/inspector --cli --method=tools/list -- uv run mcp run src/00-experian-mcp-server.py
 ```
+
+```bash
+npx @modelcontextprotocol/inspector --cli --method=tools/call --tool-name=credit_score --tool-arg=ssn="123-456-7890" -- uv run mcp run src/00-experian-mcp-
+server.py
+```
+
 ```bash
 npx @modelcontextprotocol/inspector --cli --method=prompts/list -- uv run mcp run src/00-experian-mcp-server.py
 ```

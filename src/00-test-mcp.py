@@ -2,7 +2,9 @@
 """Test script for the Experian MCP server."""
 
 import sys
-sys.path.insert(0, '/workspaces/experian')
+import os
+import logging
+import requests
 
 # Import the server module
 import importlib.util
