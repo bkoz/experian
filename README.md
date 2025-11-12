@@ -15,9 +15,8 @@ Working examples
 uv run src/01-experian-business.py
 ```
 
-```console
-INFO:root:Obtained Experian access token.
-INFO:root:{
+```json
+{
     "requestId": "rrt-02dce8480b81b09df-c-ea-1454121-44360798-1",
     "success": true,
     "results": {
