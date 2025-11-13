@@ -169,6 +169,6 @@ def credit_score(ssn: str) -> dict:
         }
 
 @mcp.prompt()
-def build_credit_score_prompt(score: int) -> str:
+def build_credit_score_prompt(credit_report: dict) -> str:
     """Build a prompt for generating a loan risk assessment based on the credit score. Args: score (int): Returns: str: The generated prompt."""
-    return f"You are a financial assistant. Generate a loan risk assessment for an applicant with a credit score of {score}."
+    return f"You are a financial assistant. Generate a loan risk assessment for an applicant based on this credit report: {credit_report}."

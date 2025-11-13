@@ -27,5 +27,5 @@ print(f"Score Factors: {credit_result.get('credit_score_info', {}).get('score_fa
 
 # Test the prompt
 print("\nTesting build_credit_score_prompt:")
-prompt = mcp_module.build_credit_score_prompt(score=score)
+prompt = mcp_module.build_credit_score_prompt(credit_report = credit_result)
 print(f"Result: {prompt}\n")
