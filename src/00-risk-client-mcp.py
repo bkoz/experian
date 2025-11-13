@@ -46,16 +46,16 @@ async def test_mcp_server():
 
             # List available tools
             tools = await session.list_tools()
-            print(f"Available tools: {[tool.name for tool in tools.tools]}\n")
-            print("Tools details:")
+            logging.info(f"Available tools: {[tool.name for tool in tools.tools]}\n")
+            logging.debug("Tools details:")
             for tool in tools.tools:
-                print(f"- {tool.name}: {tool.description} tool input schema: {tool.inputSchema['properties']}")
+                logging.debug(f"- {tool.name}: {tool.description} tool input schema: {tool.inputSchema['properties']}")
                 available_tools.append(to_llm_tool(tool))
             
-            print(f'Available tools converted to LLM schema: {available_tools}\n')
+            logging.info(f'Available tools converted to LLM schema: {available_tools}\n')
 
             # Test the credit_score tool
-            print("Testing credit_score tool:")
+            logging.debug("Testing credit_score tool:")
             result = await session.call_tool("credit_score", {"ssn": "123-45-6789"})
             
             # Parse the result
@@ -63,22 +63,22 @@ async def test_mcp_server():
             credit_result = json.loads(result.content[0].text)
             
             score = credit_result.get('credit_score_info', {}).get('score', 0)
-            print(f"Experian Credit Score Result: {score}")
-            print(f"Consumer Name: {credit_result.get('consumer_name', {}).get('first_name', '')} {credit_result.get('consumer_name', {}).get('last_name', '')}")
-            print(f"Date of Birth: {credit_result.get('date_of_birth', '')}")
-            print(f"Report Date: {credit_result.get('report_date', '')}")
-            print(f"Model Indicator: {credit_result.get('credit_score_info', {}).get('model_indicator', '')}")
-            print(f"Evaluation: {credit_result.get('credit_score_info', {}).get('evaluation', '')}")
-            print(f"Score Factors: {credit_result.get('credit_score_info', {}).get('score_factors', [])}")
+            logging.debug(f"Experian Credit Score Result: {score}")
+            logging.debug(f"Consumer Name: {credit_result.get('consumer_name', {}).get('first_name', '')} {credit_result.get('consumer_name', {}).get('last_name', '')}")
+            logging.debug(f"Date of Birth: {credit_result.get('date_of_birth', '')}")
+            logging.debug(f"Report Date: {credit_result.get('report_date', '')}")
+            logging.debug(f"Model Indicator: {credit_result.get('credit_score_info', {}).get('model_indicator', '')}")
+            logging.debug(f"Evaluation: {credit_result.get('credit_score_info', {}).get('evaluation', '')}")
+            logging.debug(f"Score Factors: {credit_result.get('credit_score_info', {}).get('score_factors', [])}")
             
             # Test the prompt
-            print("\nTesting build_credit_score_prompt:")
+            logging.debug("Testing build_credit_score_prompt:")
             prompts = await session.list_prompts()
-            print(f"Available prompts: {[p.name for p in prompts.prompts]}")
+            logging.debug(f"Available prompts: {[p.name for p in prompts.prompts]}")
             
             prompt_result = await session.get_prompt("build_credit_score_prompt", {"credit_report": json.dumps(credit_result)})
             prompt = prompt_result.messages[0].content.text
-            print(f"Result: {prompt}\n")
+            logging.debug(f"Result: {prompt}\n")
             
             return session, available_tools, prompt, credit_result
 def call_llm(prompt, functions):
@@ -121,7 +121,7 @@ def call_llm(prompt, functions):
         for tool_call in response_message.tool_calls:
             # print("TOOL: ", tool_call)
             name = tool_call.function.name
-            print("TOOL NAME: ", name)
+            logging("TOOL NAME: ", name)
             args = json.loads(tool_call.function.arguments)
             functions_to_call.append({ "name": name, "args": args })
 
@@ -142,38 +142,38 @@ async def main():
             # Test MCP server
             available_tools = []
             tools = await session.list_tools()
-            print(f"Available tools: {[tool.name for tool in tools.tools]}\n")
-            print("Tools details:")
+            logging.debug(f"Available tools: {[tool.name for tool in tools.tools]}\n")
+            logging.debug("Tools details:")
             for tool in tools.tools:
-                print(f"- {tool.name}: {tool.description} tool input schema: {tool.inputSchema['properties']}")
+                logging.debug(f"- {tool.name}: {tool.description} tool input schema: {tool.inputSchema['properties']}")
                 available_tools.append(to_llm_tool(tool))
             
-            print(f'Available tools converted to LLM schema: {available_tools}\n')
+            logging.debug(f'Available tools converted to LLM schema: {available_tools}\n')
 
             # Test the credit_score tool
-            print("Testing credit_score tool:")
+            logging.debug("Testing credit_score tool:")
             result = await session.call_tool("credit_score", {"ssn": "123-45-6789"})
             
             # Parse the result
             credit_result = json.loads(result.content[0].text)
             
             score = credit_result.get('credit_score_info', {}).get('score', 0)
-            print(f"Experian Credit Score Result: {score}")
-            print(f"Consumer Name: {credit_result.get('consumer_name', {}).get('first_name', '')} {credit_result.get('consumer_name', {}).get('last_name', '')}")
-            print(f"Date of Birth: {credit_result.get('date_of_birth', '')}")
-            print(f"Report Date: {credit_result.get('report_date', '')}")
-            print(f"Model Indicator: {credit_result.get('credit_score_info', {}).get('model_indicator', '')}")
-            print(f"Evaluation: {credit_result.get('credit_score_info', {}).get('evaluation', '')}")
-            print(f"Score Factors: {credit_result.get('credit_score_info', {}).get('score_factors', [])}")
+            logging.debug(f"Experian Credit Score Result: {score}")
+            logging.debug(f"Consumer Name: {credit_result.get('consumer_name', {}).get('first_name', '')} {credit_result.get('consumer_name', {}).get('last_name', '')}")
+            logging.debug(f"Date of Birth: {credit_result.get('date_of_birth', '')}")
+            logging.debug(f"Report Date: {credit_result.get('report_date', '')}")
+            logging.debug(f"Model Indicator: {credit_result.get('credit_score_info', {}).get('model_indicator', '')}")
+            logging.debug(f"Evaluation: {credit_result.get('credit_score_info', {}).get('evaluation', '')}")
+            logging.debug(f"Score Factors: {credit_result.get('credit_score_info', {}).get('score_factors', [])}")
             
             # Test the prompt
-            print("\nTesting build_credit_score_prompt:")
+            logging.debug("Testing build_credit_score_prompt:")
             prompts = await session.list_prompts()
-            print(f"Available prompts: {[p.name for p in prompts.prompts]}")
+            logging.info(f"Available prompts: {[p.name for p in prompts.prompts]}")
             
             prompt_result = await session.get_prompt("build_credit_score_prompt", {"credit_report": json.dumps(credit_result)})
             prompt = prompt_result.messages[0].content.text
-            print(f"Result: {prompt}\n")
+            logging.debug(f"Result: {prompt}\n")
             
             # Call LLM with the prompt and available tools
             token = os.environ["GITHUB_TOKEN"]
@@ -210,7 +210,7 @@ async def main():
             
             # Check if the LLM wants to call tools
             if response_message.tool_calls:
-                print("\nCalling tools from LLM result:")
+                logging.info("Calling tools from LLM result:")
                 
                 # Add the assistant's response to messages
                 messages.append(response_message)
@@ -219,12 +219,12 @@ async def main():
                 for tool_call in response_message.tool_calls:
                     tool_name = tool_call.function.name
                     tool_args = json.loads(tool_call.function.arguments)
-                    print(f"Calling tool: {tool_name}, arguments: {tool_args}")
+                    logging.debug(f"Calling tool: {tool_name}, arguments: {tool_args}")
                     
                     # Call the MCP tool
                     result = await session.call_tool(tool_name, arguments=tool_args)
                     tool_result = result.content[0].text
-                    print(f"Tool result: {tool_result}\n")
+                    logging.debug(f"Tool result: {tool_result}\n")
                     
                     # Add tool result to messages
                     messages.append({
@@ -234,7 +234,7 @@ async def main():
                     })
                 
                 # Call LLM again with tool results to generate final assessment
-                print("Calling LLM again with tool results to generate risk assessment...")
+                logging.info("Calling LLM again with tool results to generate risk assessment...")
                 final_response = client.chat.completions.create(
                     messages=messages,
                     model=model_name,
