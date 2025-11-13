@@ -112,17 +112,17 @@ npx @modelcontextprotocol/inspector --cli --method=prompts/list -- uv run mcp ru
 ```
 
 ```bash
-npx @modelcontextprotocol/inspector --cli --method=prompts/get --prompt-name=build_credit_score_prompt --prompt-args=score=730 -- uv run mcp run src/00-experian-mcp-server.py
+npx @modelcontextprotocol/inspector --cli --method=prompts/get --prompt-name=build_credit_score_prompt --prompt-args='credit_report={"ssn":"123"}' -- uv run mcp run src/00-experian-mcp-server.py
 ```
 ```json
 {
-  "description": "",
+  "description": "Build a prompt for generating a loan risk assessment based on the credit score. \nArgs: \n    credit_report (str): JSON string or dict containing the credit report data.\nReturns: \n    str: The generated prompt.\n",
   "messages": [
     {
       "role": "user",
       "content": {
         "type": "text",
-        "text": "You are a financial assistant. Generate a loan risk assessment for an applicant with a credit score of 730."
+        "text": "You are a financial assistant. Generate a loan risk assessment for an applicant based on this credit report: {'ssn': '123'}."
       }
     }
   ]

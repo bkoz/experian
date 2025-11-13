@@ -169,6 +169,20 @@ def credit_score(ssn: str) -> dict:
         }
 
 @mcp.prompt()
-def build_credit_score_prompt(credit_report: dict) -> str:
-    """Build a prompt for generating a loan risk assessment based on the credit score. Args: score (int): Returns: str: The generated prompt."""
-    return f"You are a financial assistant. Generate a loan risk assessment for an applicant based on this credit report: {credit_report}."
+def build_credit_score_prompt(credit_report: str) -> str:
+    """Build a prompt for generating a loan risk assessment based on the credit score. 
+    Args: 
+        credit_report (str): JSON string or dict containing the credit report data.
+    Returns: 
+        str: The generated prompt.
+    """
+    # Parse JSON string if needed
+    if isinstance(credit_report, str):
+        try:
+            credit_report_data = json.loads(credit_report)
+        except json.JSONDecodeError:
+            credit_report_data = credit_report
+    else:
+        credit_report_data = credit_report
+    
+    return f"You are a financial assistant. Generate a loan risk assessment for an applicant based on this credit report: {credit_report_data}."
