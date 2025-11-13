@@ -8,6 +8,16 @@
 - Copy `dot_env` to `.env` and edit as necessary
 
 ### Environment Variables
+Create an `.env` file (you can copy the example `dot_env`) and set the following:
+
+```console
+EXPERIAN_USERNAME="..."
+EXPERIAN_PASSWORD="..."
+EXPERIAN_CLIENT_ID="..."
+EXPERIAN_CLIENT_SECRET="..."
+GITHUB_TOKEN='...'
+```
+
 ### Consumer Credit Report 
 
 These examples call the Experian Developer Consumer Credit Profile Sandbox
@@ -16,14 +26,6 @@ These examples call the Experian Developer Consumer Credit Profile Sandbox
 > Although they require authentication, these examples make use of Experian's Developer Sandbox
 > which do not perform actual credit checks.
 
-Create an `.env` file (you can copy from `dot_env`) and set the following:
-
-```console
-EXPERIAN_USERNAME="..."
-EXPERIAN_PASSWORD="..."
-EXPERIAN_CLIENT_ID="..."
-EXPERIAN_CLIENT_SECRET="..."
-```
 
 ### Run the credit risk agent
 ```bash
