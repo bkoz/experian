@@ -185,4 +185,8 @@ def build_credit_score_prompt(credit_report: str) -> str:
     else:
         credit_report_data = credit_report
     
-    return f"You are a financial assistant. Generate a loan risk assessment for an applicant based on this credit report: {credit_report_data}."
+    # return f"You are a financial assistant. Generate a loan risk assessment for an applicant based on this credit report: {credit_report_data}."
+    return f"You are a financial assistant. Generate a loan risk assessment for this applicant given a SSN of 123-45-6789."
+
+if __name__ == "__main__":
+    mcp.run()
