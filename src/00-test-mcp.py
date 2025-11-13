@@ -29,3 +29,23 @@ print(f"Score Factors: {credit_result.get('credit_score_info', {}).get('score_fa
 print("\nTesting build_credit_score_prompt:")
 prompt = mcp_module.build_credit_score_prompt(credit_report = credit_result)
 print(f"Result: {prompt}\n")
+
+# Test the prompt using an llm served by Ollama
+print("Testing build_credit_score_prompt with Ollama LLM:")
+ollama_url = "http://localhost:11434"
+ollama_payload = {
+    "model": "llama3.2:3b",
+    "prompt": prompt,
+    "stream": False,  # Disable streaming to get a single JSON response
+    "options": {
+        "num_predict": 500,
+        "temperature": 0.7
+    }
+}
+response = requests.post(f"{ollama_url}/api/generate", json=ollama_payload)
+if response.status_code == 200:
+    llm_result = response.json()
+    print(f"LLM Response: {llm_result.get('response', '')}")
+else:
+    print(f"Error: {response.status_code} - {response.text}")       
+

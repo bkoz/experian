@@ -128,3 +128,10 @@ npx @modelcontextprotocol/inspector@latest --cli --method=prompts/get --prompt-n
   ]
 }
 ```
+
+#### Ollama setup
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull llama3.2:3b
+ollama serve
+```
