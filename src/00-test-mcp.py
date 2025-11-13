@@ -39,7 +39,8 @@ ollama_payload = {
     "stream": False,  # Disable streaming to get a single JSON response
     "options": {
         "num_predict": 500,
-        "temperature": 0.7
+        "temperature": 0.7,
+        "num_thread": 0  # 0 = use all available CPU cores
     }
 }
 response = requests.post(f"{ollama_url}/api/generate", json=ollama_payload)
