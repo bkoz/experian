@@ -99,20 +99,20 @@ uv add mcp[cli] fastmcp
 ```
 
 ```bash
-npx modelcontextprotocol/inspector --cli --method=tools/list -- uv run mcp run src/00-experian-mcp-server.py
+npx modelcontextprotocol/inspector@latest --cli --method=tools/list -- uv run mcp run src/00-experian-mcp-server.py
 ```
 
 ```bash
-npx @modelcontextprotocol/inspector --cli --method=tools/call --tool-name=credit_score --tool-arg=ssn="123-456-7890" -- uv run mcp run src/00-experian-mcp-
+npx @modelcontextprotocol/inspector@latest --cli --method=tools/call --tool-name=credit_score --tool-arg=ssn="123-456-7890" -- uv run mcp run src/00-experian-mcp-
 server.py
 ```
 
 ```bash
-npx @modelcontextprotocol/inspector --cli --method=prompts/list -- uv run mcp run src/00-experian-mcp-server.py
+npx @modelcontextprotocol/inspector@latest --cli --method=prompts/list -- uv run mcp run src/00-experian-mcp-server.py
 ```
 
 ```bash
-npx @modelcontextprotocol/inspector --cli --method=prompts/get --prompt-name=build_credit_score_prompt --prompt-args='credit_report={"ssn":"123"}' -- uv run mcp run src/00-experian-mcp-server.py
+npx @modelcontextprotocol/inspector@latest --cli --method=prompts/get --prompt-name=build_credit_score_prompt --prompt-args='credit_report={"ssn":"123"}' -- uv run mcp run src/00-experian-mcp-server.py
 ```
 ```json
 {
