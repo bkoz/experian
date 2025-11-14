@@ -34,7 +34,7 @@ async def test_mcp_server():
     """Test the MCP server using FastMCP client."""
     server_params = StdioServerParameters(
         command="uv",
-        args=["run", "src/00-experian-mcp-server.py"],
+        args=["run", "src/server.py"],
         env=os.environ.copy()  # Pass current environment variables to subprocess
     )
     
@@ -131,7 +131,7 @@ async def main():
     """Main test function."""
     server_params = StdioServerParameters(
         command="uv",
-        args=["run", "src/00-experian-mcp-server.py"],
+        args=["run", "src/server.py"],
         env=os.environ.copy()
     )
     
@@ -179,6 +179,7 @@ async def main():
             token = os.environ["GITHUB_TOKEN"]
             endpoint = "https://models.github.ai/inference"
             model_name = "gpt-4o"
+            model_name = "gpt-4.1"
             
             client = OpenAI(
                 base_url=endpoint,
