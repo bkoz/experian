@@ -30,57 +30,6 @@ def to_llm_tool(tool) -> dict:
     }
     return tool_schema
 
-async def test_mcp_server():
-    """Test the MCP server using FastMCP client."""
-    server_params = StdioServerParameters(
-        command="uv",
-        args=["run", "src/server.py"],
-        env=os.environ.copy()  # Pass current environment variables to subprocess
-    )
-    
-    async with stdio_client(server_params) as (read, write):
-        async with ClientSession(read, write) as session:
-            await session.initialize()
-            
-            available_tools = []
-
-            # List available tools
-            tools = await session.list_tools()
-            logging.info(f"Available tools: {[tool.name for tool in tools.tools]}\n")
-            logging.debug("Tools details:")
-            for tool in tools.tools:
-                logging.debug(f"- {tool.name}: {tool.description} tool input schema: {tool.inputSchema['properties']}")
-                available_tools.append(to_llm_tool(tool))
-            
-            logging.info(f'Available tools converted to LLM schema: {available_tools}\n')
-
-            # Test the credit_score tool
-            logging.debug("Testing credit_score tool:")
-            result = await session.call_tool("credit_score", {"ssn": "123-45-6789"})
-            
-            # Parse the result
-            import json
-            credit_result = json.loads(result.content[0].text)
-            
-            score = credit_result.get('credit_score_info', {}).get('score', 0)
-            logging.debug(f"Experian Credit Score Result: {score}")
-            logging.debug(f"Consumer Name: {credit_result.get('consumer_name', {}).get('first_name', '')} {credit_result.get('consumer_name', {}).get('last_name', '')}")
-            logging.debug(f"Date of Birth: {credit_result.get('date_of_birth', '')}")
-            logging.debug(f"Report Date: {credit_result.get('report_date', '')}")
-            logging.debug(f"Model Indicator: {credit_result.get('credit_score_info', {}).get('model_indicator', '')}")
-            logging.debug(f"Evaluation: {credit_result.get('credit_score_info', {}).get('evaluation', '')}")
-            logging.debug(f"Score Factors: {credit_result.get('credit_score_info', {}).get('score_factors', [])}")
-            
-            # Test the prompt
-            logging.debug("Testing build_credit_score_prompt:")
-            prompts = await session.list_prompts()
-            logging.debug(f"Available prompts: {[p.name for p in prompts.prompts]}")
-            
-            prompt_result = await session.get_prompt("build_credit_score_prompt", {"credit_report": json.dumps(credit_result)})
-            prompt = prompt_result.messages[0].content.text
-            logging.debug(f"Result: {prompt}\n")
-            
-            return session, available_tools, prompt, credit_result
 def call_llm(prompt, functions):
     token = os.environ["GITHUB_TOKEN"]
     endpoint = "https://models.github.ai/inference"
