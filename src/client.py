@@ -35,6 +35,7 @@ def call_llm(prompt, functions):
     endpoint = "https://models.github.ai/inference"
 
     model_name = "gpt-4o"
+    model_name = "gpt-4.1"
 
     client = OpenAI(
         base_url=endpoint,
