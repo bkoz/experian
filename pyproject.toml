@@ -14,4 +14,5 @@ dependencies = [
     "sse-starlette>=2.2.1",
     "mcp-client>=0.0.0",
     "openai>=1.0.0",
+    "anyio>=4.0.0",
 ]
