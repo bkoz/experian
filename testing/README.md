@@ -81,8 +81,7 @@ npx modelcontextprotocol/inspector@latest --cli --method=tools/list -- uv run mc
 ```
 
 ```bash
-npx @modelcontextprotocol/inspector@latest --cli --method=tools/call --tool-name=credit_score --tool-arg=ssn="123-456-7890" -- uv run mcp run src/00-experian-mcp-
-server.py
+npx @modelcontextprotocol/inspector@latest --cli --method=tools/call --tool-name=credit_score --tool-arg=ssn="123-456-7890" -- uv run mcp run src/server.py
 ```
 
 ```bash
@@ -106,3 +105,35 @@ npx @modelcontextprotocol/inspector@latest --cli --method=prompts/get --prompt-n
   ]
 }
 ```
+
+#### MCP Server HTTP Testing
+
+Start the server with HTTP transport:
+```bash
+uv run python src/server.py --transport streamable-http --port 8000
+```
+
+Test with curl:
+```bash
+# List tools
+curl -X POST http://localhost:8000/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
+
+# Call credit_score tool
+curl -X POST http://localhost:8000/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"credit_score","arguments":{"ssn":"123-456-7890"}}}'
+
+# List prompts
+curl -X POST http://localhost:8000/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":3,"method":"prompts/list","params":{}}'
+
+# Get prompt
+curl -X POST http://localhost:8000/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":4,"method":"prompts/get","params":{"name":"build_credit_score_prompt","arguments":{"credit_report":"{\"ssn\":\"123\"}"}}}'
+```
+
+Note: The MCP inspector CLI (`npx @modelcontextprotocol/inspector`) is designed for stdio-based transports and does not support HTTP URLs directly. Use curl or other HTTP clients to test the HTTP endpoint.

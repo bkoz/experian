@@ -3,6 +3,8 @@ import os
 import sys
 import requests
 import json
+import argparse
+import anyio
 
 # Logging setup 
 # Configure logging to display the time, file name and line number.
@@ -188,5 +190,196 @@ def build_credit_score_prompt(credit_report: str) -> str:
     # return f"You are a financial assistant. Generate a loan risk assessment for an applicant based on this credit report: {credit_report_data}."
     return f"You are a financial loan officer assistant. Generate an extensive loan risk assessment for this applicant given a SSN of 123-45-6789."
 
+def parse_args():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(description='Experian MCP Server')
+    parser.add_argument(
+        '--transport',
+        type=str,
+        choices=['stdio', 'streamable-http'],
+        default='stdio',
+        help='Transport type: stdio (default) or streamable-http'
+    )
+    parser.add_argument(
+        '--host',
+        type=str,
+        default='127.0.0.1',
+        help='Host to bind to for HTTP transport (default: 127.0.0.1)'
+    )
+    parser.add_argument(
+        '--port',
+        type=int,
+        default=8000,
+        help='Port to bind to for HTTP transport (default: 8000)'
+    )
+    return parser.parse_args()
+
 if __name__ == "__main__":
-    mcp.run()
+    args = parse_args()
+    
+    if args.transport == 'streamable-http':
+        # Use streamable-http transport with Starlette/uvicorn
+        import uvicorn
+        from starlette.applications import Starlette
+        from starlette.routing import Route
+        from starlette.responses import Response
+        from starlette.requests import Request
+        import json
+        
+        logging.info(f"Starting Experian MCP Server with streamable-http transport on {args.host}:{args.port}")
+        
+        # Get the underlying MCP server from FastMCP
+        mcp_server = mcp._mcp_server
+        
+        async def handle_mcp(request: Request):
+            """Handle MCP messages via streamable HTTP"""
+            try:
+                # Read and parse the request body
+                body = await request.body()
+                request_data = json.loads(body)
+                
+                logging.debug(f"Received request: {request_data}")
+                
+                # Handle different MCP methods
+                method = request_data.get("method")
+                request_id = request_data.get("id")
+                
+                if method == "initialize":
+                    # Return initialization response
+                    response = {
+                        "jsonrpc": "2.0",
+                        "id": request_id,
+                        "result": {
+                            "protocolVersion": "2024-11-05",
+                            "capabilities": {
+                                "tools": {},
+                                "prompts": {}
+                            },
+                            "serverInfo": {
+                                "name": "Experian MCP Server",
+                                "version": "0.1"
+                            }
+                        }
+                    }
+                elif method == "tools/list":
+                    # Return list of tools
+                    response = {
+                        "jsonrpc": "2.0",
+                        "id": request_id,
+                        "result": {
+                            "tools": [
+                                {
+                                    "name": "credit_score",
+                                    "description": "Fetch credit score for a given SSN from Experian API (mock implementation).\nArgs:\n    ssn (str): Social Security Number of the applicant.\nReturns:\n    dict: A dictionary containing the credit score information.",
+                                    "inputSchema": {
+                                        "type": "object",
+                                        "properties": {
+                                            "ssn": {
+                                                "title": "Ssn",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": ["ssn"]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                elif method == "tools/call":
+                    # Handle tool execution
+                    tool_name = request_data.get("params", {}).get("name")
+                    tool_args = request_data.get("params", {}).get("arguments", {})
+                    
+                    if tool_name == "credit_score":
+                        ssn = tool_args.get("ssn")
+                        result = credit_score(ssn)
+                        response = {
+                            "jsonrpc": "2.0",
+                            "id": request_id,
+                            "result": {
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": json.dumps(result, indent=2)
+                                    }
+                                ]
+                            }
+                        }
+                    else:
+                        response = {
+                            "jsonrpc": "2.0",
+                            "id": request_id,
+                            "error": {
+                                "code": -32601,
+                                "message": f"Unknown tool: {tool_name}"
+                            }
+                        }
+                elif method == "prompts/list":
+                    # Return list of prompts
+                    response = {
+                        "jsonrpc": "2.0",
+                        "id": request_id,
+                        "result": {
+                            "prompts": [
+                                {
+                                    "name": "build_credit_score_prompt",
+                                    "description": "Build a prompt for generating a loan risk assessment based on the credit score.",
+                                    "arguments": [
+                                        {
+                                            "name": "credit_report",
+                                            "description": "JSON string or dict containing the credit report data",
+                                            "required": True
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                else:
+                    response = {
+                        "jsonrpc": "2.0",
+                        "id": request_id,
+                        "error": {
+                            "code": -32601,
+                            "message": f"Method not found: {method}"
+                        }
+                    }
+                
+                logging.debug(f"Sending response: {response}")
+                
+                return Response(
+                    content=json.dumps(response),
+                    media_type="application/json",
+                    headers={
+                        "Content-Type": "application/json",
+                    }
+                )
+                
+            except Exception as e:
+                logging.error(f"Error processing request: {e}", exc_info=True)
+                error_response = {
+                    "jsonrpc": "2.0",
+                    "id": request_data.get("id") if 'request_data' in locals() else None,
+                    "error": {
+                        "code": -32603,
+                        "message": str(e)
+                    }
+                }
+                return Response(
+                    content=json.dumps(error_response),
+                    media_type="application/json",
+                    status_code=500
+                )
+        
+        app = Starlette(
+            debug=True,
+            routes=[
+                Route("/mcp", endpoint=handle_mcp, methods=["POST"]),
+            ]
+        )
+        
+        uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+    else:
+        # Use stdio transport (default)
+        logging.info("Starting Experian MCP Server with stdio transport")
+        mcp.run()
