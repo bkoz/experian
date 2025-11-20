@@ -31,53 +31,6 @@ def to_llm_tool(tool) -> dict:
     }
     return tool_schema
 
-def call_llm(prompt, functions):
-    token = os.environ["GITHUB_TOKEN"]
-    endpoint = "https://models.github.ai/inference"
-
-    model_name = "gpt-4o"
-    model_name = "gpt-4.1"
-
-    client = OpenAI(
-        base_url=endpoint,
-        api_key=token,
-    )
-
-    print("CALLING LLM")
-    response = client.chat.completions.create(
-        messages=[
-            {
-            "role": "system",
-            "content": "You are a helpful assistant.",
-            },
-            {
-            "role": "user",
-            "content": prompt,
-            },
-        ],
-        model=model_name,
-        tools = functions,
-        # Optional parameters
-        temperature=1.,
-        max_tokens=1000,
-        top_p=1.    
-    )
-
-    # .content if we want just see the text response 
-    response_message = response.choices[0].message
-    
-    functions_to_call = []
-
-    if response_message.tool_calls:
-        for tool_call in response_message.tool_calls:
-            # print("TOOL: ", tool_call)
-            name = tool_call.function.name
-            logging("TOOL NAME: ", name)
-            args = json.loads(tool_call.function.arguments)
-            functions_to_call.append({ "name": name, "args": args })
-
-    return functions_to_call
-
 class HttpMcpClient:
     """Simple HTTP client for MCP JSON-RPC over HTTP."""
     
