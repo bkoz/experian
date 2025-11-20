@@ -82,7 +82,7 @@ Let me know if any additional details or assessments are needed!
 
 ### Code Summary
 
-The `src/client.py` script acts as a test client for an Experian MCP (Microservice Context Protocol) server, supporting both HTTP and standard I/O (stdio) transport methods. It integrates with OpenAI's API for language model interactions to perform tasks such as financial risk assessment.
+The `src/client.py` script acts as a test client for an Experian MCP (Model Context Protocol) server, supporting both HTTP and standard I/O (stdio) transport methods. It integrates with OpenAI's API for language model interactions to perform tasks such as financial risk assessment.
 
 ### Key Components and Functionalities:
 
