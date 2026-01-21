@@ -72,7 +72,7 @@ def build_credit_report_request() -> dict:
     if COMPANY_ID:
         requestor["companyId"] = COMPANY_ID
 
-    body = json.load(open("data/rent.json"))
+    body = json.load(open("data/income_employment.json"))
 
     return body
 
